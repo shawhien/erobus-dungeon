@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shaw's House</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!--load effects-->
+<div class="loadingSpace" id="loading">
+  
+  <div class="load">
+    <img src="art/attack.png">
+    <img src="art/fire.png">
+    <img src="art/heal.png">
+    <img src="art/defend.png">
+    <img src="art/charge.png">
+  </div>
+</div>
+
+<!-- Splash page, Unhides, when loaded, hides when game begins -->
+<div class="noDisplay" id="splashPg">
+  <div class="title"> </div>
+  <div class="start">
+    <div class="button" id="start">Start Battle!</div>
+  </div>
+  <div class="splashHero"></div>
+</div>
+
+<!-- gameboard -->
+<div class="noDisplay" id="area">
+  <span id="eHealth">health</span>
+
+  <!-- enemy damage to hero -->
+  <div id="damageTaken"></div>
+    <div class="number">
+      <p id="dmg"> </p>
+    </div>
+  <div id="enemy">
+    <div id="damage">
+      <p id="str"> </p>
+    </div>
+  </div>
+
+  <!-- Hero stats -->
+  <div class="status" id="statusMenu">
+    <div class="indicator">
+      <div id="health">Health: 100</div>
+      <div id="stamina">Stamina: 20</div>
+    </div>
+  </div>
+
+  <!-- Abilities -->
+  <div class="menubox">
+    <div class="button" id="attack">Attack</div>
+    <div class="button" id="defend">Defend</div>
+    <div class="button" id="fire">Fire</div>
+    <div class="button" id="heal">Heal</div>
+    <div class="button" id="wait">Wait</div>
+    <div class="button" id="charge">Charge</div>
+  </div>
+</div>
+
+<!-- sounds -->
+<audio id="music" src="audio/Battle-Dawn_loop.ogg"></audio>
+<audio id="lvu" src="audio/levelup.wav"></audio>
+<audio id="hurt" src="audio/damaged.ogg"></audio>
+<audio id="die0" src="audio/die0.wav"></audio>
+<audio id="fired" src="audio/fire.ogg"></audio>
+<audio id="heald" src="audio/heal.ogg"></audio>
+<audio id="miscd" src="audio/misc.ogg"></audio>
+<audio id="windd" src="audio/lightning.ogg"></audio>
+<audio id="iced" src="audio/ice.ogg"></audio>
+<audio id="waitd" src="audio/wait.ogg"></audio>
+<audio id="dead" src="audio/gameover.ogg"></audio>
+
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="./js/model.js"></script>
+<script src="./js/display.js"></script>
+<script src="./js/game.js"></script>
+
+</body>
+</html>
